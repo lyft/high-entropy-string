@@ -1,0 +1,14 @@
+language: python
+python:
+- '2.7'
+install: pip install -r requirements.txt
+script: make test
+deploy:
+  provider: pypi
+  user: lyftpypi
+  password:
+    secure: UAVA9gkzIBJGMGUNhI7FP1tjCJPJB1F8LOVjrtF5zvf0FXOwlkHN89zyX16fvawErOgsDQScV7foorrU+/j+j83tIT8xsLMq999g7WdBE/AfC2bNUNsdtR44nDhZWtb9+IMcwn8ad4wKEdwj5mEevbjzPTjDmA8/Cc4/AQ1wqhz6tMT5ZRuqGbbjY48be9jn0jwy0uarCmM95mn2dh0K9jKZCBhcNzuimiQxj5wvkz025tBB94VG/4ba2dScuRtvmyi+2LOLHSWDmlwiMXv35zotuq2dS7ifcp5OQ6U/LUlyxS0f2/BY18gWOHQ3cpEfSpvIXPSxzljaquL1jFhEH0vfrj/y6Elte89R0n6/yS9Q6LmeE5nq5uuHL/4LQuWrsTZFaSsMsk0nHlWl/6P/nlSOmw0lUajSZHcG5cZ0zQO79FEY1rPXqEzxkt+cHrT4L4hKAecVqBrirhf6zKT97vXWV2l8IH7xykvnVfeeAMjBQ3enpFm1DJStuHTD/+SFvy/baXlJ2du9gK8klXGIHfFXAPjy7KTI0NGMpnA6kgJMno5rxXVBMPCUYIBAtEVEnIH1quP5iGTgIvrnI44Qv8VD7S5WjNIeaZXlV/7A0iL02MWwlT6aE9gjVFNm+KmAHmWypOxVeTatI8dw9md6DHZIWuX4Fh6ilBEKDOkN94w=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: lyft/high-entropy-string

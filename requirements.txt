@@ -1,3 +1,5 @@
+# License: MIT
+zxcvbn>=1.0,<=2.0
 # The modular source code checker: pep8, pyflakes and co
 # License: MIT
 # Upstream url: http://bitbucket.org/tarek/flake8
