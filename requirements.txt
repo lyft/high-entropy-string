@@ -1,0 +1,4 @@
+# The modular source code checker: pep8, pyflakes and co
+# License: MIT
+# Upstream url: http://bitbucket.org/tarek/flake8
+flake8==2.3.0
