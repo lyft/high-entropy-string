@@ -25,7 +25,7 @@ requirements = [
 
 setup(
     name="high-entropy-string",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(exclude=["test*"]),
     install_requires=requirements,
     author="Ryan Lane",
