@@ -15,12 +15,10 @@ from setuptools import setup, find_packages
 
 
 requirements = [
-    # Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK)
-    # for Python.
     # License: MIT
     # Upstream url: https://github.com/dropbox/zxcvbn
     # Use: For entropy checks
-    'zxcvbn>=1.0,<=2.0'
+    'zxcvbn>=1.0,<=1.999'
 ]
 
 setup(
