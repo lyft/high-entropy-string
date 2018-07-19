@@ -18,7 +18,7 @@ ENTROPY_PATTERNS_TO_FLAG = [
     # PEM encoded PKCS8 private keys
     re.compile('BEGIN.*PRIVATE KEY')
     # Slack webhook
-    re.compile('https://hooks.slack.com/services')
+    re.compile('https:\/\/hooks.slack.com\/services\/T\w{8}\/B\w{8}\/\w{24}')
 ]
 mimetypes.init()
 EXTS = [re.escape(i) for i in mimetypes.types_map.keys()]
