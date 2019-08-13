@@ -18,12 +18,12 @@ requirements = [
     # License: MIT
     # Upstream url: https://github.com/dropbox/zxcvbn
     # Use: For entropy checks
-    'zxcvbn>=1.0,<=1.999'
+    'zxcvbn>=4.4'
 ]
 
 setup(
     name="high-entropy-string",
-    version="0.2.1",
+    version="0.3.0",
     packages=find_packages(exclude=["test*"]),
     install_requires=requirements,
     author="Ryan Lane",
