@@ -18,7 +18,7 @@ requirements = [
     # License: MIT
     # Upstream url: https://github.com/dropbox/zxcvbn
     # Use: For entropy checks
-    'zxcvbn>=1.0,<=1.999'
+    'zxcvbn==4.4.28'
 ]
 
 setup(
