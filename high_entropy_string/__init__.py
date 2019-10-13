@@ -264,7 +264,7 @@ class PythonStringData(object):
         else:
             check_str = self.string
         try:
-            entropy = zxcvbn.password_strength(check_str)['entropy']
+            entropy = zxcvbn.zxcvbn(check_str)['score']
         except UnicodeDecodeError:
             logger.warning(
                 'Failed to get entropy due to unicode decode error.'
