@@ -1,3 +1,5 @@
+⚠️ This repository has been archived and is no longer accepting contributions ⚠️
+
 # high-entropy-string
 
 A library for classifying strings as potential secrets.
